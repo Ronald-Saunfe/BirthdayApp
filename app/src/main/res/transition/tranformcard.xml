@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<transitionSet xmlns:android="http://schemas.android.com/apk/res/android"
+    android:interpolator="@android:interpolator/overshoot">
+    <fade android:interpolator="@android:interpolator/overshoot"/>
+    <changeBounds android:interpolator="@android:interpolator/overshoot"/>
+    <changeClipBounds android:interpolator="@android:interpolator/overshoot"/>
+    <changeImageTransform/>
+
+    <targets>
+        <!-- if using a custom Toolbar container, specify the ID of the AppBarLayout -->
+        <target android:excludeId="@id/appbar1" />
+        <target android:excludeId="@id/appbar2" />
+        <target android:excludeId="@android:id/statusBarBackground"/>
+        <target android:excludeId="@android:id/navigationBarBackground"/>
+    </targets>
+
+</transitionSet>
